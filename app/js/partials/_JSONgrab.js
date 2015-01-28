@@ -1,3 +1,5 @@
+var _ = require('lodash');
+
 var zip = 35801; //zip is the value from the zip input field in form
 var url = 'https://api.wunderground.com/api/e948aefbd9d71dd2/forecast/q/' + zip + '.json'
 
@@ -16,4 +18,8 @@ function getJSON(url, cb) {
 
 getJSON(url, function(data) {
   
-})
+});
+
+module.exports= getJSON;
+
+
