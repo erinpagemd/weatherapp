@@ -3,6 +3,8 @@ html(lang="en-US")
   head
     include ./partials/_head.jade
   body
-    include ./partials/_form.jade
-    include ./partials/_content.jade
-    include ./partials/_footer.jade
+    .row.wrapper
+      .large-12.columns
+        include ./partials/_form.jade
+        include ./partials/_content.jade
+        include ./partials/_footer.jade
