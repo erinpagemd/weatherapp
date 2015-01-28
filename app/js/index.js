@@ -6,9 +6,11 @@ var submit = document.querySelector('#zipForm input[type=submit]')
 submit.addEventListener('click', function(){
     zip = enteredZip.value;
     console.log(zip);
+    debugger;
 });
 
 
+/* 
 var url = 'https://api.wunderground.com/api/e948aefbd9d71dd2/forecast/q/' + zip + '.json'
 
 function getJSON(url, cb) {
@@ -27,3 +29,4 @@ function getJSON(url, cb) {
 getJSON(url, function(data) {
 
 });
+*/
