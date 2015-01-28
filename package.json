@@ -1,0 +1,19 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "This is a weather app using Weather Underground API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebrengle/weatherapp.git"
+  },
+  "author": "It Doesn't Matter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebrengle/weatherapp/issues"
+  },
+  "homepage": "https://github.com/ebrengle/weatherapp"
+}
