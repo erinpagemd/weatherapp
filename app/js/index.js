@@ -1,6 +1,6 @@
 var enteredZip = document.querySelector('#zipCode');  //zip is the value from the zip input field in form
 var zip;
-var submit = document.querySelector('#zipForm input[type=submit]')
+var submit = document.querySelector('.submitZip')
 
 
 submit.addEventListener('click', function(){
