@@ -2,19 +2,19 @@ var enteredZip = document.querySelector('#zipCode');  //zip is the value from th
 var zip;
 var submit = document.querySelector('.submitZip');
 var url;
+var forecastday;
+
 
 
 submit.addEventListener('click', function(){
     zip = enteredZip.value;
-    var url = 'https://api.wunderground.com/api/e948aefbd9d71dd2/forecast/q/' + zip + '.json'
-    console.log(url);
+    var url = 'https://api.wunderground.com/api/e948aefbd9d71dd2/forecast10day/q/' + zip + '.json'
 
     function getJSON(url, cb) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET', url);
 
       xhr.onload = function (data){
-        //debugger;
         if (this.status >= 200 && this.status < 400) {
           cb(JSON.parse(this.response));
         }
@@ -23,6 +23,9 @@ submit.addEventListener('click', function(){
     }
 
     getJSON(url, function(data) {
+
+      forecastday = data.forecast.simpleforecast.forecastday;
+      
       debugger;
     });
 });
